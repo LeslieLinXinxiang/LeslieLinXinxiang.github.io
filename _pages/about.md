@@ -26,61 +26,76 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+<style>
+  /* 强制锁定学术列表样式，防止主题干扰 */
+  .pub-list { margin-top: 30px; }
+  .pub-item { display: flex; align-items: flex-start; margin-bottom: 35px; gap: 20px; }
+  .pub-img { flex: 0 0 220px; max-width: 220px; } /* 锁定图片宽度 */
+  .pub-img img { width: 100%; height: 130px; object-fit: cover; border-radius: 4px; border: 1px solid #f0f0f0; }
+  .pub-content { flex: 1; }
+  .pub-title { font-size: 1.05rem; font-weight: 600; margin: 0 0 5px 0; color: #333; }
+  .pub-authors { font-size: 0.9rem; margin-bottom: 5px; color: #555; }
+  .pub-venue { font-size: 0.9rem; font-style: italic; color: #777; margin-bottom: 8px; }
+  .pub-desc { font-size: 0.88rem; line-height: 1.4; color: #444; text-align: justify; margin-bottom: 10px; }
+  .pub-links a { 
+    font-size: 0.75rem; padding: 1px 8px; margin-right: 5px; border-radius: 3px; 
+    border: 1px solid #ccc; color: #555; text-decoration: none; 
+  }
+  .pub-links a:hover { background: #f5f5f5; border-color: #999; }
+</style>
 
-<!-- ----------------------------------------------------------------------- -->
-<!-- Selected Research & Highlights (首页精选项目) -->
-<!-- ----------------------------------------------------------------------- -->
+<div class="pub-list">
+  <h2 style="font-size: 1.5rem; border-bottom: 1.5px solid #333; padding-bottom: 8px; margin-bottom: 25px;">Selected Research</h2>
 
-<div class="projects" style="margin-top: 50px;">
-  <h2 style="border-bottom: 1px solid #eaecef; padding-bottom: 10px; font-weight: bold;">Selected Research & Projects</h2>
-
-  <!-- 1. V-LGP Project -->
-  <div class="row" style="margin-top: 30px; display: flex; align-items: flex-start;">
-    <div class="col-sm-4" style="padding-right: 15px;">
-      {% include figure.liquid path="assets/img/vlgp.gif" title="V-LGP" class="img-fluid rounded z-depth-1" %}
+  <!-- 1. V-LGP -->
+  <div class="pub-item">
+    <div class="pub-img">
+      <img src="{{ 'assets/img/vlgp.gif' | relative_url }}" alt="V-LGP">
     </div>
-    <div class="col-sm-8">
-      <h3 style="font-size: 1.2rem; font-weight: 700; margin-top: 0;">V-LGP: Vision-Language Geometric Programming</h3>
-      <p style="font-size: 0.95rem; line-height: 1.5; text-align: justify;">
-        A hierarchical framework bridging VLM reasoning with low-level LGP solvers for long-horizon robotic assembly. I specifically enhanced the <b>C++ KOMO solver</b> with <i>virtual anchors</i> to resolve multi-support physical constraints and implemented <i>geometric funnels</i> to ensure robust Sim-to-Real transfer.
-      </p>
-      <div class="links">
-        <a href="https://github.com/LeslieLinXinxiang/VLM-LGP" class="btn btn-outline-dark btn-sm" style="padding: 2px 8px; font-size: 0.8rem;">Code</a>
-        <span class="btn btn-outline-secondary btn-sm disabled" style="padding: 2px 8px; font-size: 0.8rem;">Paper (Under Review at RAL)</span>
+    <div class="pub-content">
+      <div class="pub-title">V-LGP: Vision-Language Geometric Programming for Long-Horizon Assembly</div>
+      <div class="pub-authors"><b>Xinxiang Lin</b>, et al.</div>
+      <div class="pub-venue">Under Review at IEEE Robotics and Automation Letters (RA-L)</div>
+      <div class="pub-desc">
+        A hierarchical planning framework that bridges VLM-based semantic reasoning with low-level KOMO geometric solvers. Enhanced the solver with virtual anchors to resolve multi-support stability.
+      </div>
+      <div class="pub-links">
+        <a href="https://github.com/LeslieLinXinxiang/VLM-LGP">Code</a>
+        <a style="color: #999; border-color: #eee;">PDF (Coming Soon)</a>
       </div>
     </div>
   </div>
 
-  <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
-
-  <!-- 2. VLM Agent Project -->
-  <div class="row" style="display: flex; align-items: flex-start;">
-    <div class="col-sm-4" style="padding-right: 15px;">
-      {% include figure.liquid path="assets/img/vlm_agent.gif" title="VLM Agent" class="img-fluid rounded z-depth-1" %}
+  <!-- 2. VLM Agent -->
+  <div class="pub-item">
+    <div class="pub-img">
+      <img src="{{ 'assets/img/vlm_agent.gif' | relative_url }}" alt="VLM Agent">
     </div>
-    <div class="col-sm-8">
-      <h3 style="font-size: 1.2rem; font-weight: 700; margin-top: 0;">Multimodal Reasoning for Dexterous Manipulation</h3>
-      <p style="font-size: 0.95rem; line-height: 1.5; text-align: justify;">
-        Integrated an end-to-end VLM agent with <b>Lingxin Dexterous Hands</b>. This work focuses on grounding vision-language instructions into high-precision tactile and grasp planning. Successfully resolved contact-stability issues during real-world logic execution through refined motor torque profiles.
-      </p>
-      <div class="links">
-        <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent" class="btn btn-outline-dark btn-sm" style="padding: 2px 8px; font-size: 0.8rem;">Code</a>
+    <div class="pub-content">
+      <div class="pub-title">Neuro-Symbolic Tabletop Agent with Dexterous Manipulation</div>
+      <div class="pub-authors"><b>Xinxiang Lin</b>, et al.</div>
+      <div class="pub-venue">Technical Report / University Project</div>
+      <div class="pub-desc">
+        End-to-end deployment of a VLM reasoning agent on a 7-DOF arm with Lingxin Dexterous Hands. Solved Sim-to-Real gaps in high-precision contact-rich tasks like Tic-Tac-Toe.
+      </div>
+      <div class="pub-links">
+        <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent">Code</a>
       </div>
     </div>
   </div>
 
-  <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
-
-  <!-- 3. Humanoid Project -->
-  <div class="row" style="display: flex; align-items: flex-start;">
-    <div class="col-sm-4" style="padding-right: 15px;">
-      {% include figure.liquid path="assets/img/collaboration_project.jpg" title="Humanoid Integration" class="img-fluid rounded z-depth-1" %}
+  <!-- 3. Humanoid -->
+  <div class="pub-item">
+    <div class="pub-img">
+      <img src="{{ 'assets/img/collaboration_project.jpg' | relative_url }}" alt="Humanoid">
     </div>
-    <div class="col-sm-8">
-      <h3 style="font-size: 1.2rem; font-weight: 700; margin-top: 0;">Mechatronic Design for Bipedal Humanoid Platforms</h3>
-      <p style="font-size: 0.95rem; line-height: 1.5; text-align: justify;">
-        <b>Industry Collaboration with Greenland Harmonic.</b> Focused on the development and system-wide integration of high-torque density joint modules. Conducted <i>Hardware-in-the-Loop (HIL)</i> testing and vibration analysis to eliminate mechanical resonance for stable locomotion.
-      </p>
+    <div class="pub-content">
+      <div class="pub-title">System Integration and Mechatronic Design for Bipedal Humanoid Joints</div>
+      <div class="pub-authors"><b>Xinxiang Lin</b>, et al.</div>
+      <div class="pub-venue">Industry Collaboration with Greenland Harmonic Drive</div>
+      <div class="pub-desc">
+        Developed high-torque joint modules and performed HIL testing. Mitigated mechanical resonance through vibration analysis to ensure locomotion stability on real hardware.
+      </div>
     </div>
   </div>
 </div>
