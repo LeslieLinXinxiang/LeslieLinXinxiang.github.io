@@ -20,7 +20,7 @@ horizontal: false
       <div class="card sticky-teaser mb-3">
         <div class="row no-gutters">
           <div class="col-md-6">
-            {% include figure.html path="assets/img/vlgp.gif" title="V-LGP Demo" class="img-fluid rounded-left" %}
+            {% include figure.liquid path="assets/img/vlgp.gif" title="V-LGP Demo" class="img-fluid rounded-left" %}
           </div>
           <div class="col-md-6">
             <div class="card-body">
@@ -44,7 +44,7 @@ horizontal: false
       <div class="card sticky-teaser mb-3">
         <div class="row no-gutters">
           <div class="col-md-6">
-            {% include figure.html path="assets/img/vlm_agent.gif" title="VLM Agent" class="img-fluid rounded-left" %}
+            {% include figure.liquid path="assets/img/vlm_agent.gif" title="VLM Agent" class="img-fluid rounded-left" %}
           </div>
           <div class="col-md-6">
             <div class="card-body">
@@ -67,7 +67,7 @@ horizontal: false
       <div class="card sticky-teaser mb-3">
         <div class="row no-gutters">
           <div class="col-md-4">
-            {% include figure.html path="assets/img/collaboration_project.jpg" title="Humanoid Project" class="img-fluid rounded-left" %}
+            {% include figure.liquid path="assets/img/collaboration_project.jpg" title="Humanoid Project" class="img-fluid rounded-left" %}
           </div>
           <div class="col-md-8">
             <div class="card-body">
