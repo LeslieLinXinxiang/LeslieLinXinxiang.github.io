@@ -8,7 +8,6 @@ display_categories: [Research, Industry]
 horizontal: false
 ---
 
-
 <!-- V-LGP Project -->
 <div class="projects">
   <h2 class="category">Research</h2>
