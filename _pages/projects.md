@@ -12,7 +12,7 @@ horizontal: false
 <!-- V-LGP Project -->
 <div class="projects">
   <h2 class="category">Research</h2>
-  {% include repository/repo_user.html %}
+  {% include repository/repo.html repository="LeslieLinXinxiang/VLM-LGP" %}
 </div>
 
 <div class="container">
