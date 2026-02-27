@@ -6,7 +6,7 @@ subtitle: Graduate Student @ <a href="https://www.um.edu.mo/">University of Maca
 
 profile:
   align: right
-  image: selfie.jpg  # 已经按你的要求修改为 selfie.jpg
+  image: selfie.jpg
   image_circular: false
 
 news: false
@@ -16,6 +16,7 @@ social: true
 
 <div class="post">
   <article>
+    <!-- 1. Bio Section -->
     <div class="clearfix">
       <p>
         I am a Graduate Student at the <b>University of Macau</b>, majoring in Robotics and Autonomous Systems. My research interests lie at the intersection of <b>Embodied AI</b> and <b>TAMP (Task and Motion Planning)</b>.
@@ -28,73 +29,44 @@ social: true
       </p>
     </div>
 
-    <!-- 精选项目 (Selected Research & Projects) -->
+    <!-- 2. Selected Works Section (Data-Driven) -->
     <div class="selected-works" style="margin-top: 50px;">
-      <h2 style="font-size: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 25px;">Selected Works</h2>
-
+      <h2 style="font-size: 1.5rem; border-bottom: 1.5px solid #333; padding-bottom: 8px; margin-bottom: 25px;">Selected Works</h2>
+      
       <style>
-        .work-item { display: flex; align-items: flex-start; margin-bottom: 30px; gap: 20px; }
-        .work-img { flex: 0 0 200px; max-width: 200px; }
-        .work-img img { width: 100%; height: 120px; object-fit: cover; border-radius: 4px; border: 1px solid #eee; }
+        .work-item { display: flex; align-items: flex-start; margin-bottom: 35px; gap: 20px; }
+        .work-img { flex: 0 0 220px; max-width: 220px; }
+        .work-img img { width: 100%; height: 130px; object-fit: cover; border-radius: 4px; border: 1px solid #f0f0f0; }
         .work-content { flex: 1; }
         .work-title { font-size: 1.05rem; font-weight: 600; margin: 0 0 5px 0; color: #333; }
         .work-venue { font-size: 0.85rem; color: #777; margin-bottom: 8px; font-style: italic; }
-        .work-desc { font-size: 0.88rem; line-height: 1.4; color: #444; text-align: justify; }
+        .work-desc { font-size: 0.88rem; line-height: 1.45; color: #444; text-align: justify; }
         .work-links { margin-top: 8px; }
         .work-links a { font-size: 0.75rem; padding: 1px 8px; border: 1px solid #ccc; border-radius: 3px; color: #555; text-decoration: none; margin-right: 5px; }
-        .work-links a:hover { background: #f8f8f8; }
+        .work-links a:hover { background: #f8f8f8; border-color: #999; }
       </style>
-      
-<!-- 1. V-LGP -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/vlgp.gif' | relative_url }}" alt="V-LGP">
-        </div>
-        <div class="work-content">
-          <div class="work-title">V-LGP: Vision-Language Geometric Programming for Long-Horizon Assembly</div>
-          <div class="work-venue">Submitted to IEEE Robotics and Automation Letters (RA-L)</div>
-          <div class="work-desc">
-            A hierarchical closed-loop framework bridging high-level semantic reasoning with low-level geometric motion planning. The system operates via a <b>"Perception-Reasoning-Action-Verification"</b> pipeline designed to solve complex long-horizon robotic manipulation tasks.
-          </div>
-          <div class="work-links">
-            <a href="https://github.com/LeslieLinXinxiang/VLM-LGP">Code</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- 2. Linkerbot Project -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/vlm_agent.gif' | relative_url }}" alt="VLM Agent">
-        </div>
-        <div class="work-content">
-          <div class="work-title">End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation</div>
-          <div class="work-venue">Collaboration with Linkerbot</div>
-          <div class="work-desc">
-            Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a robot arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time interaction with a dexterous hand.
+      {% for item in site.data.works %}
+        <div class="work-item">
+          <div class="work-img">
+            <img src="{{ item.img | relative_url }}" alt="{{ item.title }}">
           </div>
-          <div class="work-links">
-            <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent">Code</a>
+          <div class="work-content">
+            <div class="work-title">{{ item.title }}</div>
+            <div class="work-venue">{{ item.venue }}</div>
+            <div class="work-desc">{{ item.desc }}</div>
+            <div class="work-links">
+              {% if item.code %}
+                <a href="{{ item.code }}" class="btn btn-outline-dark btn-sm">Code</a>
+              {% endif %}
+              {% if item.type == 'publication' %}
+                <a class="btn btn-outline-secondary btn-sm disabled" style="color: #999;">PDF (Coming Soon)</a>
+              {% endif %}
+            </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
+    </div> <!-- End selected-works -->
 
-      <!-- 3. Leaderdrive Humanoid -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/collaboration_project.jpg' | relative_url }}" alt="Humanoid">
-        </div>
-        <div class="work-content">
-          <div class="work-title">Mechatronic Design and Locomotion Deployment for Bipedal Humanoid</div>
-          <div class="work-venue">Industry Collaboration with Leaderdrive</div>
-          <div class="work-desc">
-            Directed the structural design and integration of joint modules for a humanoid platform. Optimized locomotion stability by mitigating mechanical resonance and sensor noise during hardware-in-the-loop (HIL) testing and deployment.
-          </div>
-        </div>
-      </div>
-
-    </div>
-      <!-- 修正：删除了多余的 <div> 开启标签，补充了闭合标签 -->
-    </div>
   </article>
-</div>
+</div> <!-- End post -->
