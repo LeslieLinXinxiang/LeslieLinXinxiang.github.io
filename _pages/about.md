@@ -2,21 +2,20 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://www.um.edu.mo/">University of Macau</a> | Robotics & Autonomous Systems
+subtitle: Graduate Student @ <a href="https://www.um.edu.mo/">University of Macau</a> | Robotics & Autonomous Systems
 
 profile:
   align: right
-  image: selfie.jpg
-  image_circular: false # 学术风通常用方角或微圆角
+  image: selfie.jpg  # 已经按你的要求修改为 selfie.jpg
+  image_circular: false
   more_info: >
     <p>Macau, China</p>
 
-news: false # 按照你的要求，彻底隐藏 News 模块
-selected_papers: false # 我们手动在下方构建，不使用默认插件
+news: false
+selected_papers: false
 social: true
 ---
 
-<!-- 1. 个人简介 (Bio) -->
 <div class="post">
   <article>
     <div class="clearfix">
@@ -31,7 +30,7 @@ social: true
       </p>
     </div>
 
-    <!-- 2. 精选项目 & 研究 (Selected Research & Projects) -->
+    <!-- 精选项目 (Selected Research & Projects) -->
     <div class="selected-works" style="margin-top: 50px;">
       <h2 style="font-size: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 25px;">Selected Research & Projects</h2>
 
@@ -48,7 +47,7 @@ social: true
         .work-links a:hover { background: #f8f8f8; }
       </style>
 
-      <!-- V-LGP (Publication) -->
+      <!-- 1. V-LGP -->
       <div class="work-item">
         <div class="work-img">
           <img src="{{ 'assets/img/vlgp.gif' | relative_url }}" alt="V-LGP">
@@ -66,7 +65,7 @@ social: true
         </div>
       </div>
 
-      <!-- VLM Agent (Project) -->
+      <!-- 2. VLM Agent -->
       <div class="work-item">
         <div class="work-img">
           <img src="{{ 'assets/img/vlm_agent.gif' | relative_url }}" alt="VLM Agent">
@@ -83,9 +82,8 @@ social: true
         </div>
       </div>
 
-      <!-- Humanoid (Project) -->
+      <!-- 3. Humanoid -->
       <div class="work-item">
-        <div class="work-item">
         <div class="work-img">
           <img src="{{ 'assets/img/collaboration_project.jpg' | relative_url }}" alt="Humanoid">
         </div>
@@ -97,6 +95,7 @@ social: true
           </div>
         </div>
       </div>
+      <!-- 修正：删除了多余的 <div> 开启标签，补充了闭合标签 -->
     </div>
   </article>
 </div>
