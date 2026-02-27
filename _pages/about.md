@@ -16,7 +16,7 @@ social: false
 
 <div class="post">
   <article>
-    <!-- 1. Bio Section (Updated Wording) -->
+    <!-- 1. Bio Section -->
     <div class="clearfix">
       <p>
         I am a Graduate Student at the <b>University of Macau</b>, majoring in Robotics and Autonomous Systems. <b>Currently, my work focuses on the intersection of Embodied AI and Task & Motion Planning (TAMP).</b>
@@ -45,8 +45,12 @@ social: false
         .work-venue { font-size: 0.85rem; color: #777; margin-bottom: 8px; font-style: italic; }
         .work-desc { font-size: 0.88rem; line-height: 1.45; color: #444; text-align: justify; }
         .work-links { margin-top: 8px; }
-        .work-links a { font-size: 0.75rem; padding: 1px 8px; border: 1px solid #ccc; border-radius: 3px; color: #555; text-decoration: none; margin-right: 5px; }
-        .work-links a:hover { background: #f8f8f8; border-color: #999; }
+        .work-links a.btn-standard { font-size: 0.75rem; padding: 1px 8px; border: 1px solid #ccc; border-radius: 3px; color: #555; text-decoration: none; margin-right: 5px; display: inline-block;}
+        .work-links a.btn-standard:hover { background: #f8f8f8; border-color: #999; }
+        
+        /* 引入专属的专利按钮样式 (徕芬蓝) */
+        .work-links a.btn-patent { font-size: 0.75rem; padding: 1px 8px; border: 1px solid #007bff; border-radius: 3px; color: #007bff; text-decoration: none; margin-right: 5px; display: inline-block; background-color: white;}
+        .work-links a.btn-patent:hover { background-color: #007bff; color: white; }
       </style>
 
       <!-- 1. V-LGP -->
@@ -61,8 +65,8 @@ social: false
             A hierarchical framework bridging VLM reasoning with low-level LGP solvers. Enhanced the C++ KOMO solver with virtual anchors for multi-support consistency.
           </div>
           <div class="work-links">
-            <a href="https://github.com/LeslieLinXinxiang/VLM-LGP" class="btn btn-outline-dark btn-sm" style="color: #333;">Code</a>
-            <span class="btn btn-outline-secondary btn-sm disabled" style="color: #999;">PDF (Coming Soon)</span>
+            <a href="https://github.com/LeslieLinXinxiang/VLM-LGP" class="btn-standard" style="color: #333;">Code</a>
+            <span class="btn-standard disabled" style="color: #999; border-color: #eee;">PDF (Coming Soon)</span>
           </div>
         </div>
       </div>
@@ -79,7 +83,7 @@ social: false
             Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a 6-DOF JAKA Zu3 arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time game interaction with a dexterous hand.
           </div>
           <div class="work-links">
-            <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent" class="btn btn-outline-dark btn-sm" style="color: #333;">Code</a>
+            <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent" class="btn-standard" style="color: #333;">Code</a>
           </div>
         </div>
       </div>
@@ -94,6 +98,53 @@ social: false
           <div class="work-venue">Industry Collaboration with Leaderdrive</div>
           <div class="work-desc">
             Directed the structural design and integration of joint modules for a humanoid platform. Optimized locomotion stability by mitigating mechanical resonance and sensor noise during hardware-in-the-loop (HIL) testing and deployment.
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Dreame MOVA M1 -->
+      <div class="work-item">
+        <div class="work-img">
+          <img src="{{ 'assets/img/MOVA_Mower-1000Thumb_1.jpg' | relative_url }}" alt="MOVA M1">
+        </div>
+        <div class="work-content">
+          <div class="work-title">MOVA M1 Outdoor Mowing Robot</div>
+          <div class="work-venue">Dreame Technology | Mobile Robotics Platform</div>
+          <div class="work-desc">
+            Led the precision design and dynamic balancing of the blade actuation module. Resolved IPX-rated waterproofing and vibration compensation for harsh outdoor environments, supporting a global shipment target of 200,000+ units.
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Laifen Constant Force -->
+      <div class="work-item">
+        <div class="work-img">
+          <img src="{{ 'assets/img/constant_force.jpg' | relative_url }}" alt="Constant Force">
+        </div>
+        <div class="work-content">
+          <div class="work-title">Constant Force Lifting Mechanism</div>
+          <div class="work-venue">Laifen Technology | Lead Inventor</div>
+          <div class="work-desc">
+            Engineered a gravity-compensation mechanism using scotch yoke and cam profiles to linearize spring output. This innovation allows users to adjust heavy device height with zero effort (hovering effect).
+          </div>
+          <div class="work-links">
+            <a href="{{ 'assets/pdf/CN202420998035_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn-patent">
+              <i class="fas fa-file-pdf"></i> CN 202420998035 U
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. EcoFlow Blade Mower -->
+      <div class="work-item">
+        <div class="work-img">
+          <img src="{{ 'assets/img/blade with puppy.JPG' | relative_url }}" alt="Blade Mower">
+        </div>
+        <div class="work-content">
+          <div class="work-title">Blade Robotic Lawn Mower System</div>
+          <div class="work-venue">EcoFlow | CES Innovation Award Winner</div>
+          <div class="work-desc">
+            Led the structural development of the mowing deck and leaf collection module. Optimized the gear transmission system, extending service life by 40% and ensuring IPX5 waterproofing.
           </div>
         </div>
       </div>
