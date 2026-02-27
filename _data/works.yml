@@ -5,16 +5,16 @@
   venue: "Submitted to IEEE RA-L"
   authors: "<b>Xinxiang Lin</b>, et al."
   img: "assets/img/vlgp.gif"
-  desc: "A hierarchical closed-loop framework bridging high-level semantic reasoning with low-level geometric motion planning. The system operates via a 'Perception-Reasoning-Action-Verification' pipeline designed to solve complex long-horizon robotic manipulation tasks."
+  desc: "Proposed a 'Perception-Reasoning-Execution-Verification' closed-loop framework using VLMs as Rule Pruners, reducing the logical search space by 90%. Refactored the underlying C++ KOMO geometric solver, achieving a 90%+ success rate for complex assembly tasks in real-world environments."
   code: "https://github.com/LeslieLinXinxiang/VLM-LGP"
   pdf: "" # 留空则显示 Coming Soon
 
 - id: linkerbot
   type: project
   title: "End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation"
-  venue: "Collaboration with Linkerbot"
+  venue: "Collaboration with Linkerbot | Joint Lab Project"
   img: "assets/img/vlm_agent.gif"
-  desc: "Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a robot arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time game interaction with a dexterous hand."
+  desc: "Engineered a vision-centric reasoning agent on a 6-DOF JAKA Zu3 arm. Achieved zero-shot multi-modal spatial grounding and developed an adaptive 3-finger/5-finger dynamic switching strategy for the Lingxin dexterous hand, featuring autonomous error recovery for long-horizon tasks."
   code: "https://github.com/LeslieLinXinxiang/VLM-Game-Agent"
 
 - id: leaderdrive
@@ -22,13 +22,14 @@
   title: "Mechatronic Design and Locomotion Deployment for Bipedal Humanoid"
   venue: "Industry Collaboration with Leaderdrive"
   img: "assets/img/collaboration_project.jpg"
-  desc: "Directed the structural design and integration of joint modules for a humanoid platform. Optimized locomotion stability by mitigating mechanical resonance and sensor noise during hardware-in-the-loop (HIL) testing and deployment."
+  desc: "Led the mechatronic integration of humanoid joint modules utilizing high-torque harmonic reducers. Built a 1kHz EtherCAT control feedback link for HIL testing and mitigated mechanical resonance to resolve control gain divergence in locomotion algorithms."
+
 - id: laifen
   type: project
   title: "Constant Force Lifting Mechanism for Consumer Robotics"
   venue: "Laifen Tech | Lead Inventor"
   img: "assets/img/constant_force.jpg"
-  desc: "Engineered a gravity-compensation mechanism using scotch yoke and cam profiles. Solved the non-linear force output problem, achieving smooth, hovering-like adjustment for heavy payloads."
+  desc: "Engineered a gravity-compensation mechanism utilizing cam profiles and coil springs. Converted non-linear elastic potential energy to achieve a zero-effort, hovering-like height adjustment experience, successfully deployed across multiple product lines."
   code: ""
 
 - id: ecoflow
@@ -36,5 +37,5 @@
   title: "Blade Robotic Lawn Mower System"
   venue: "EcoFlow | CES Innovation Award"
   img: "assets/img/blade with puppy.JPG"
-  desc: "Led the structural development of the mowing deck and leaf collection module. Optimized the gear transmission system, extending service life by 40% and ensuring IPX5 waterproofing."
+  desc: "Led the structural development of the cutter head lifting and leaf collection modules. Optimized the gearbox turbine worm material and transmission system, extending the reducer's service life by 40% for the CES Innovation Award-winning product."
   code: ""
