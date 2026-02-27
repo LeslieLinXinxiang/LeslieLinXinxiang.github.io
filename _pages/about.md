@@ -32,7 +32,7 @@ social: true
 
     <!-- 精选项目 (Selected Research & Projects) -->
     <div class="selected-works" style="margin-top: 50px;">
-      <h2 style="font-size: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 25px;">Selected Research & Projects</h2>
+      <h2 style="font-size: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 25px;">Selected Works</h2>
 
       <style>
         .work-item { display: flex; align-items: flex-start; margin-bottom: 30px; gap: 20px; }
