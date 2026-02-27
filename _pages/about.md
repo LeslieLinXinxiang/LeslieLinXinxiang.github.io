@@ -69,7 +69,7 @@ social: true
         </div>
         <div class="work-content">
           <div class="work-title">End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation</div>
-          <div class="work-venue">Collaboration with Linkerbot | Joint Lab Project</div>
+          <div class="work-venue">Collaboration with Linkerbot</div>
           <div class="work-desc">
             Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a robot arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time interaction with a dexterous hand.
           </div>
