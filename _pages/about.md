@@ -25,6 +25,9 @@ social: true
         Specifically, I am exploring how Vision-Language Models (VLMs) can be integrated with geometric solvers to achieve long-horizon manipulation in real-world environments. I am passionate about bridging the gap between high-level reasoning and low-level physical execution.
       </p>
       <p>
+        Before my graduate studies, I spent three years in the robotics and smart hardware industry, contributing to the mass production of several consumer-grade robots and products.
+      </p>
+      <p>
         If you have any questions or would like to discuss potential collaborations, feel free to reach out via <a href="mailto:Leslie.Linxinxiang@connect.um.edu.mo">email</a>.
       </p>
     </div>
