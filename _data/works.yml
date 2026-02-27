@@ -23,3 +23,18 @@
   venue: "Industry Collaboration with Leaderdrive"
   img: "assets/img/collaboration_project.jpg"
   desc: "Directed the structural design and integration of joint modules for a humanoid platform. Optimized locomotion stability by mitigating mechanical resonance and sensor noise during hardware-in-the-loop (HIL) testing and deployment."
+- id: laifen
+  type: project
+  title: "Constant Force Lifting Mechanism for Consumer Robotics"
+  venue: "Laifen Tech | Lead Inventor"
+  img: "assets/img/constant_force.jpg"
+  desc: "Engineered a gravity-compensation mechanism using scotch yoke and cam profiles. Solved the non-linear force output problem, achieving smooth, hovering-like adjustment for heavy payloads."
+  code: ""
+
+- id: ecoflow
+  type: project
+  title: "Blade Robotic Lawn Mower System"
+  venue: "EcoFlow | CES Innovation Award"
+  img: "assets/img/blade with puppy.JPG"
+  desc: "Led the structural development of the mowing deck and leaf collection module. Optimized the gear transmission system, extending service life by 40% and ensuring IPX5 waterproofing."
+  code: ""
