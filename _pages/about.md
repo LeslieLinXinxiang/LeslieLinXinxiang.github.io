@@ -11,15 +11,15 @@ profile:
 
 news: false
 selected_papers: false
-social: true
+social: false
 ---
 
 <div class="post">
   <article>
-    <!-- 1. Bio Section -->
+    <!-- 1. Bio Section (Updated Wording) -->
     <div class="clearfix">
       <p>
-        I am a Graduate Student at the <b>University of Macau</b>, majoring in Robotics and Autonomous Systems. My research interests lie at the intersection of <b>Embodied AI</b> and <b>TAMP (Task and Motion Planning)</b>.
+        I am a Graduate Student at the <b>University of Macau</b>, majoring in Robotics and Autonomous Systems. <b>Currently, my work focuses on the intersection of Embodied AI and Task & Motion Planning (TAMP).</b>
       </p>
       <p>
         Specifically, I am exploring how Vision-Language Models (VLMs) can be integrated with geometric solvers to achieve long-horizon manipulation in real-world environments. I am passionate about bridging the gap between high-level reasoning and low-level physical execution.
@@ -32,7 +32,7 @@ social: true
       </p>
     </div>
 
-    <!-- 2. Selected Works Section (Data-Driven) -->
+    <!-- 2. Selected Works Section (Manual Layout for Precision) -->
     <div class="selected-works" style="margin-top: 50px;">
       <h2 style="font-size: 1.5rem; border-bottom: 1.5px solid #333; padding-bottom: 8px; margin-bottom: 25px;">Selected Works</h2>
       
@@ -49,27 +49,55 @@ social: true
         .work-links a:hover { background: #f8f8f8; border-color: #999; }
       </style>
 
-      {% for item in site.data.works %}
-        <div class="work-item">
-          <div class="work-img">
-            <img src="{{ item.img | relative_url }}" alt="{{ item.title }}">
+      <!-- 1. V-LGP -->
+      <div class="work-item">
+        <div class="work-img">
+          <img src="{{ 'assets/img/vlgp.gif' | relative_url }}" alt="V-LGP">
+        </div>
+        <div class="work-content">
+          <div class="work-title">V-LGP: Vision-Language Geometric Programming for Long-Horizon Assembly</div>
+          <div class="work-venue">Submitted to IEEE Robotics and Automation Letters (RA-L)</div>
+          <div class="work-desc">
+            A hierarchical framework bridging VLM reasoning with low-level LGP solvers. Enhanced the C++ KOMO solver with virtual anchors for multi-support consistency.
           </div>
-          <div class="work-content">
-            <div class="work-title">{{ item.title }}</div>
-            <div class="work-venue">{{ item.venue }}</div>
-            <div class="work-desc">{{ item.desc }}</div>
-            <div class="work-links">
-              {% if item.code %}
-                <a href="{{ item.code }}" class="btn btn-outline-dark btn-sm">Code</a>
-              {% endif %}
-              {% if item.type == 'publication' %}
-                <a class="btn btn-outline-secondary btn-sm disabled" style="color: #999;">PDF (Coming Soon)</a>
-              {% endif %}
-            </div>
+          <div class="work-links">
+            <a href="https://github.com/LeslieLinXinxiang/VLM-LGP" class="btn btn-outline-dark btn-sm" style="color: #333;">Code</a>
+            <span class="btn btn-outline-secondary btn-sm disabled" style="color: #999;">PDF (Coming Soon)</span>
           </div>
         </div>
-      {% endfor %}
-    </div> <!-- End selected-works -->
+      </div>
 
+      <!-- 2. Linkerbot -->
+      <div class="work-item">
+        <div class="work-img">
+          <img src="{{ 'assets/img/vlm_agent.gif' | relative_url }}" alt="VLM Agent">
+        </div>
+        <div class="work-content">
+          <div class="work-title">End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation</div>
+          <div class="work-venue">Collaboration with Linkerbot | Joint Lab Project</div>
+          <div class="work-desc">
+            Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a 6-DOF JAKA Zu3 arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time game interaction with a dexterous hand.
+          </div>
+          <div class="work-links">
+            <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent" class="btn btn-outline-dark btn-sm" style="color: #333;">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Leaderdrive Humanoid -->
+      <div class="work-item">
+        <div class="work-img">
+          <img src="{{ 'assets/img/collaboration_project.jpg' | relative_url }}" alt="Humanoid">
+        </div>
+        <div class="work-content">
+          <div class="work-title">Mechatronic Design and Locomotion Deployment for Bipedal Humanoid</div>
+          <div class="work-venue">Industry Collaboration with Leaderdrive</div>
+          <div class="work-desc">
+            Directed the structural design and integration of joint modules for a humanoid platform. Optimized locomotion stability by mitigating mechanical resonance and sensor noise during hardware-in-the-loop (HIL) testing and deployment.
+          </div>
+        </div>
+      </div>
+
+    </div>
   </article>
-</div> <!-- End post -->
+</div>
