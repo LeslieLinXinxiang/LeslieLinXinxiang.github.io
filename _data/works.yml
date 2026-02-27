@@ -34,7 +34,7 @@
 
 - id: ecoflow
   type: project
-  title: "Blade Robotic Lawn Mower System"
+  title: "Blade Robotic Lawn Mower"
   venue: "EcoFlow | CES Innovation Award"
   img: "assets/img/blade with puppy.JPG"
   desc: "Led the structural development of the cutter head lifting and leaf collection modules. Optimized the gearbox turbine worm material and transmission system, extending the reducer's service life by 40% for the CES Innovation Award-winning product."
