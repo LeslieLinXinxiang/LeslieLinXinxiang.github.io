@@ -45,12 +45,16 @@ social: false
         .work-venue { font-size: 0.85rem; color: #777; margin-bottom: 8px; font-style: italic; }
         .work-desc { font-size: 0.88rem; line-height: 1.45; color: #444; text-align: justify; }
         .work-links { margin-top: 8px; }
-        .work-links a.btn-standard { font-size: 0.75rem; padding: 1px 8px; border: 1px solid #ccc; border-radius: 3px; color: #555; text-decoration: none; margin-right: 5px; display: inline-block;}
-        .work-links a.btn-standard:hover { background: #f8f8f8; border-color: #999; }
+        /* 1. Code 按钮：黑边白底 */
+        .work-links .btn-code { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #333; border-radius: 3px; color: #333; background-color: #fff; text-decoration: none; margin-right: 5px; display: inline-block; }
+        .work-links .btn-code:hover { background-color: #333; color: #fff; text-decoration: none; }
         
-        /* 引入专属的专利按钮样式 (徕芬蓝) */
-        .work-links a.btn-patent { font-size: 0.75rem; padding: 1px 8px; border: 1px solid #007bff; border-radius: 3px; color: #007bff; text-decoration: none; margin-right: 5px; display: inline-block; background-color: white;}
-        .work-links a.btn-patent:hover { background-color: #007bff; color: white; }
+        /* 2. PDF 按钮：红边白底 */
+        .work-links .btn-pdf-soon { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #d32f2f; border-radius: 3px; color: #d32f2f; background-color: #fff; text-decoration: none; margin-right: 5px; display: inline-block; cursor: not-allowed; opacity: 0.8; }
+        
+        /* 3. Patent 按钮：蓝边白底 (与 Projects 页面统一) */
+        .work-links .btn-patent { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #007bff; border-radius: 3px; color: #007bff; text-decoration: none; margin-right: 5px; display: inline-block; background-color: #fff;}
+        .work-links .btn-patent:hover { background-color: #007bff; color: #fff; text-decoration: none; }
       </style>
 
       <!-- 1. V-LGP -->
@@ -65,8 +69,8 @@ social: false
             A hierarchical framework bridging VLM reasoning with low-level LGP solvers. Enhanced the C++ KOMO solver with virtual anchors for multi-support consistency.
           </div>
           <div class="work-links">
-            <a href="https://github.com/LeslieLinXinxiang/VLM-LGP" class="btn-standard" style="color: #333;">Code</a>
-            <span class="btn-standard disabled" style="color: #999; border-color: #eee;">PDF (Coming Soon)</span>
+            <a href="https://github.com/LeslieLinXinxiang/VLM-LGP" class="btn-code">Code</a>
+            <span class="btn-pdf-soon">PDF (Coming Soon)</span>
           </div>
         </div>
       </div>
@@ -83,7 +87,7 @@ social: false
             Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a 6-DOF JAKA Zu3 arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time game interaction with a dexterous hand.
           </div>
           <div class="work-links">
-            <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent" class="btn-standard" style="color: #333;">Code</a>
+            <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent" class="btn-code">Code</a>
           </div>
         </div>
       </div>
