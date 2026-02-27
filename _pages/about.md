@@ -44,35 +44,34 @@ social: true
         .work-links a { font-size: 0.75rem; padding: 1px 8px; border: 1px solid #ccc; border-radius: 3px; color: #555; text-decoration: none; margin-right: 5px; }
         .work-links a:hover { background: #f8f8f8; }
       </style>
-
-      <!-- 1. V-LGP -->
+      
+<!-- 1. V-LGP -->
       <div class="work-item">
         <div class="work-img">
           <img src="{{ 'assets/img/vlgp.gif' | relative_url }}" alt="V-LGP">
         </div>
         <div class="work-content">
           <div class="work-title">V-LGP: Vision-Language Geometric Programming for Long-Horizon Assembly</div>
-          <div class="work-venue">Under Review at IEEE Robotics and Automation Letters (RA-L)</div>
+          <div class="work-venue">Submitted to IEEE Robotics and Automation Letters (RA-L)</div>
           <div class="work-desc">
-            A hierarchical framework bridging VLM reasoning with low-level LGP solvers. Enhanced the C++ KOMO solver with virtual anchors for multi-support consistency.
+            A hierarchical closed-loop framework bridging high-level semantic reasoning with low-level geometric motion planning. The system operates via a <b>"Perception-Reasoning-Action-Verification"</b> pipeline designed to solve complex long-horizon robotic manipulation tasks.
           </div>
           <div class="work-links">
             <a href="https://github.com/LeslieLinXinxiang/VLM-LGP">Code</a>
-            <a style="color: #999; border-color: #eee;">PDF (Coming Soon)</a>
           </div>
         </div>
       </div>
 
-      <!-- 2. VLM Agent -->
+      <!-- 2. Linkerbot Project -->
       <div class="work-item">
         <div class="work-img">
           <img src="{{ 'assets/img/vlm_agent.gif' | relative_url }}" alt="VLM Agent">
         </div>
         <div class="work-content">
-          <div class="work-title">Neuro-Symbolic Agent for Dexterous Manipulation</div>
-          <div class="work-venue">Project | Lingxin Dexterous Hand Integration</div>
+          <div class="work-title">End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation</div>
+          <div class="work-venue">Collaboration with Linkerbot | Joint Lab Project</div>
           <div class="work-desc">
-            End-to-end deployment of VLM agents on a 7-DOF arm. Solved contact-stability issues in real-world logic tasks through motor torque profile optimization.
+            Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a robot arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time interaction with a dexterous hand.
           </div>
           <div class="work-links">
             <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent">Code</a>
@@ -80,19 +79,21 @@ social: true
         </div>
       </div>
 
-      <!-- 3. Humanoid -->
+      <!-- 3. Leaderdrive Humanoid -->
       <div class="work-item">
         <div class="work-img">
           <img src="{{ 'assets/img/collaboration_project.jpg' | relative_url }}" alt="Humanoid">
         </div>
         <div class="work-content">
-          <div class="work-title">Mechatronic Design for Bipedal Humanoid Joints</div>
-          <div class="work-venue">Industry Collaboration with Greenland Harmonic Drive</div>
+          <div class="work-title">Mechatronic Design and Locomotion Deployment for Bipedal Humanoid</div>
+          <div class="work-venue">Industry Collaboration with Leaderdrive</div>
           <div class="work-desc">
-            Developed high-torque density joint modules. Performed HIL testing and vibration analysis to mitigate mechanical resonance for locomotion stability.
+            Directed the structural design and integration of joint modules for a humanoid platform. Optimized locomotion stability by mitigating mechanical resonance and sensor noise during hardware-in-the-loop (HIL) testing and deployment.
           </div>
         </div>
       </div>
+
+    </div>
       <!-- 修正：删除了多余的 <div> 开启标签，补充了闭合标签 -->
     </div>
   </article>
