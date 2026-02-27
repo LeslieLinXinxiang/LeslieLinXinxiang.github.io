@@ -12,7 +12,7 @@
 - id: linkerbot
   type: project
   title: "End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation"
-  venue: "Collaboration with Linkerbot | Joint Lab Project"
+  venue: "Collaboration with Linkerbot"
   img: "assets/img/vlm_agent.gif"
   desc: "Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a 6-DOF JAKA Zu3 arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time game interaction with a dexterous hand."
   code: "https://github.com/LeslieLinXinxiang/VLM-Game-Agent"
