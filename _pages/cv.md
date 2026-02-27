@@ -20,7 +20,6 @@ description: Downloads for my English and Chinese Resumes.
       <a href="{{ '/assets/pdf/CV_English_Xinxiang_Lin.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">
         <div class="card hoverable shadow-sm" style="border: 1px solid #ddd; padding: 20px; text-align: center;">
           <h4 style="color: #333; margin: 0;">English CV</h4>
-          <p style="font-size: 0.8rem; color: #888; margin-top: 5px</p>
           <i class="fas fa-file-pdf" style="font-size: 2rem; color: #d32f2f; margin-top: 10px;"></i>
         </div>
       </a>
@@ -31,7 +30,6 @@ description: Downloads for my English and Chinese Resumes.
       <a href="{{ '/assets/pdf/CV_Chinese_Xinxiang_Lin.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">
         <div class="card hoverable shadow-sm" style="border: 1px solid #ddd; padding: 20px; text-align: center;">
           <h4 style="color: #333; margin: 0;">中文简历</h4>
-          <p style="font-size: 0.8rem; color: #888; margin-top: 5px</p>
           <i class="fas fa-file-pdf" style="font-size: 2rem; color: #d32f2f; margin-top: 10px;"></i>
         </div>
       </a>
