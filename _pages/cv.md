@@ -16,7 +16,6 @@ description: Downloads for my English and Chinese Resumes.
       <a href="{{ '/assets/pdf/Linxinxiang_CV_260227.pdf' | relative_url }}" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="border: 1px solid #ddd; padding: 30px; border-radius: 8px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
           <h4 style="margin-bottom: 10px; font-weight: bold;">English CV</h4>
-          <p style="font-size: 0.85rem; color: #666;">Academic & Global Robotics</p>
           <i class="fas fa-file-download" style="font-size: 2rem; color: #333; margin-top: 15px;"></i>
         </div>
       </a>
@@ -27,7 +26,6 @@ description: Downloads for my English and Chinese Resumes.
       <a href="{{ '/assets/pdf/林鑫祥_CV_260227.pdf' | relative_url }}" target="_blank" style="text-decoration: none; color: inherit;">
         <div style="border: 1px solid #ddd; padding: 30px; border-radius: 8px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
           <h4 style="margin-bottom: 10px; font-weight: bold;">中文简历</h4>
-          <p style="font-size: 0.85rem; color: #666;">For Domestic Industry HR</p>
           <i class="fas fa-file-download" style="font-size: 2rem; color: #d32f2f; margin-top: 15px;"></i>
         </div>
       </a>
