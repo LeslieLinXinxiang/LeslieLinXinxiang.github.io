@@ -127,7 +127,7 @@ description: A collection of projects during my work and study.
       </div>
     </div>
     <div class="col-sm-7">
-      <h5>MOVA M1 Outdoor Mowing Robot</h5>
+      <h5>MOVA Robotic Lawn Mower</h5>
       <p class="desc-text">
         <b>Mobile Robotics Platform.</b> Led the precision design and dynamic balancing of the blade actuation module. Resolved IPX-rated waterproofing and vibration compensation for harsh outdoor environments. 
         <br><i>Key Achievement:</i> Supported global shipment of 200,000+ units.
