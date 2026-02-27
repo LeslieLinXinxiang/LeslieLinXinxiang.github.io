@@ -143,3 +143,152 @@ nav_order: 3
             <div class="carousel-contain-box">
               <img src="{{ 'assets/img/MOVA_Mower-1000Thumb_1.jpg' | relative_url }}" alt="Mova Mower">
             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-contain-box">
+              <img src="{{ 'assets/img/mova_blade.png' | relative_url }}" alt="Blade Module">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#dreameCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#dreameCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h5 style="font-weight: 600;">MOVA M1 Outdoor Mowing Robot</h5>
+      <p style="text-align: justify;">
+        <b>Mobile Robotics Platform.</b> Led the precision design and dynamic balancing of the blade actuation module. Resolved IPX-rated waterproofing and vibration compensation for harsh outdoor environments. 
+        <br>
+        <i>Key Achievement:</i> Supported a global shipment target of 200,000+ units.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- ======================= -->
+  <!-- At Laifen Technology    -->
+  <!-- ======================= -->
+  <h3 class="mt-4 mb-3">At Laifen Technology</h3>
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="static-contain-box">
+        <img src="{{ 'assets/img/Abstract.png' | relative_url }}" alt="Gravity Compensation">
+      </div>
+    </div>
+    <div class="col-sm-7">
+      <h5 style="font-weight: 600;">Constant Force Lifting Mechanism</h5>
+      <p style="text-align: justify;">
+        Engineered a gravity-compensation mechanism using scotch yoke and cam profiles to linearize spring output. This innovation allows users to adjust heavy device height with zero effort (hovering effect).
+      </p>
+      <div style="margin-top: 15px;">
+        <a href="{{ 'assets/pdf/CN202420998035_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fas fa-file-pdf"></i> CN 202420998035 U
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- ======================= -->
+  <!-- At EcoFlow              -->
+  <!-- ======================= -->
+  <h3 class="mt-4 mb-3">At EcoFlow</h3>
+  
+  <!-- Project 1: Blade Mower -->
+  <div class="row mb-5">
+    <div class="col-sm-6">
+      <!-- Ecoflow Carousel -->
+      <div id="ecoflowCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+        <ol class="carousel-indicators">
+          <li data-target="#ecoflowCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#ecoflowCarousel" data-slide-to="1"></li>
+          <li data-target="#ecoflowCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <div class="carousel-contain-box">
+              <img src="{{ 'assets/img/blade_3d_model.PNG' | relative_url }}" alt="3D Model">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-contain-box">
+              <img src="{{ 'assets/img/blade with puppy.JPG' | relative_url }}" alt="Real Product">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-contain-box">
+              <img src="{{ 'assets/img/IMG_8133.JPG' | relative_url }}" alt="Testing">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#ecoflowCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#ecoflowCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h5 style="font-weight: 600;">Blade Robotic Lawn Mower</h5>
+      <p style="text-align: justify;">
+        <b>CES Innovation Award Winner.</b> Led the structural development of the mowing deck and leaf collection module. Optimized the gear transmission system, extending service life by 40% and ensuring IPX5 waterproofing.
+      </p>
+    </div>
+  </div>
+
+  <!-- Project 2: Smart Wagon -->
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="static-contain-box">
+        <img src="{{ 'assets/img/Abstract.png' | relative_url }}" alt="Wagon Structure">
+      </div>
+    </div>
+    <div class="col-sm-7">
+      <h5 style="font-weight: 600;">Smart Electric Camping Wagon</h5>
+      <p style="text-align: justify;">
+        Implemented current-loop control for gravity compensation (anti-slip on slopes) and designed the folding kinematic structure. Authored 5 utility patents for novel actuation structures.
+      </p>
+      
+      <!-- Patent Grid -->
+      <div class="row mt-3">
+        <div class="col-md-6 col-12">
+          <a href="{{ 'assets/pdf/CN202320491229_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn btn-outline-primary btn-patent">
+            <i class="fas fa-file-pdf"></i> CN 202320491229 U
+          </a>
+        </div>
+        <div class="col-md-6 col-12">
+          <a href="{{ 'assets/pdf/CN202320498391_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn btn-outline-primary btn-patent">
+            <i class="fas fa-file-pdf"></i> CN 202320498391 U
+          </a>
+        </div>
+        <div class="col-md-6 col-12">
+          <a href="{{ 'assets/pdf/CN202320571565_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn btn-outline-primary btn-patent">
+            <i class="fas fa-file-pdf"></i> CN 202320571565 U
+          </a>
+        </div>
+        <div class="col-md-6 col-12">
+          <a href="{{ 'assets/pdf/CN202320574400_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn btn-outline-primary btn-patent">
+            <i class="fas fa-file-pdf"></i> CN 202320574400 U
+          </a>
+        </div>
+        <div class="col-md-6 col-12">
+          <a href="{{ 'assets/pdf/CN202320589748_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn btn-outline-primary btn-patent">
+            <i class="fas fa-file-pdf"></i> CN 202320589748 U
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
