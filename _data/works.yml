@@ -1,0 +1,25 @@
+# 统一项目数据库
+- id: vlgp
+  type: publication
+  title: "V-LGP: Vision-Language Geometric Programming for Long-Horizon Assembly"
+  venue: "Submitted to IEEE RA-L"
+  authors: "<b>Xinxiang Lin</b>, et al."
+  img: "assets/img/vlgp.gif"
+  desc: "A hierarchical closed-loop framework bridging high-level semantic reasoning with low-level geometric motion planning. The system operates via a 'Perception-Reasoning-Action-Verification' pipeline designed to solve complex long-horizon robotic manipulation tasks."
+  code: "https://github.com/LeslieLinXinxiang/VLM-LGP"
+  pdf: "" # 留空则显示 Coming Soon
+
+- id: linkerbot
+  type: project
+  title: "End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation"
+  venue: "Collaboration with Linkerbot | Joint Lab Project"
+  img: "assets/img/vlm_agent.gif"
+  desc: "Replaced traditional modular pipelines with vision-centric end-to-end intelligence on a 6-DOF JAKA Zu3 arm. Implemented a closed-loop reasoning agent using multimodal inputs to achieve autonomous decision-making and real-time game interaction with a dexterous hand."
+  code: "https://github.com/LeslieLinXinxiang/VLM-Game-Agent"
+
+- id: leaderdrive
+  type: project
+  title: "Mechatronic Design and Locomotion Deployment for Bipedal Humanoid"
+  venue: "Industry Collaboration with Leaderdrive"
+  img: "assets/img/collaboration_project.jpg"
+  desc: "Directed the structural design and integration of joint modules for a humanoid platform. Optimized locomotion stability by mitigating mechanical resonance and sensor noise during hardware-in-the-loop (HIL) testing and deployment."
