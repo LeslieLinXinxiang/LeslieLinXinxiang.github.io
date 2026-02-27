@@ -8,8 +8,6 @@ profile:
   align: right
   image: selfie.jpg  # 已经按你的要求修改为 selfie.jpg
   image_circular: false
-  more_info: >
-    <p>Macau, China</p>
 
 news: false
 selected_papers: false
