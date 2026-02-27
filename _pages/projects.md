@@ -91,7 +91,7 @@ nav_order: 3
   <h3 class="mt-4 mb-3">At Laifen Technology</h3>
   <div class="row">
     <div class="col-sm-5">
-      {% include figure.liquid path="assets/img/Abstract.png" class="img-fluid rounded border" %}
+      {% include figure.liquid path="assets/img/constant_force.jpg" class="img-fluid rounded border" %}
     </div>
     <div class="col-sm-7">
       <h5 style="font-weight: 600;">Constant Force Lifting Mechanism</h5>
