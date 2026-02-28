@@ -23,6 +23,8 @@
   venue: "Industry Collaboration with Leaderdrive"
   img: "assets/img/collaboration_project.jpg"
   desc: "Collaborated on the mechatronic development of a bipedal humanoid platform. Executed the mechanical design of joint modules integrated with high-torque harmonic reducers and assisted in the real-machine deployment of locomotion algorithms. Optimized system stability by identifying and mitigating mechanical resonance issues during 1kHz EtherCAT-based Hardware-in-the-Loop (HIL) testing.“
+  
+- id: laifen
   type: project
   title: "Constant Force Lifting Mechanism for Consumer Robotics"
   venue: "Laifen Tech | Lead Inventor"
