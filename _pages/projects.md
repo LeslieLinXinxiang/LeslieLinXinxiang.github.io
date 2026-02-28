@@ -32,36 +32,37 @@ description: A collection of projects during my work and study.
   }
   .static-contain-box img { max-height: 100%; max-width: 100%; object-fit: contain; }
 
-  /* 2. Patent Button Style (Matches Smart Wagon) */
+  /* 2. Unified Button Styles */
+  /* Code 按钮：黑边白底 */
+  .btn-code { 
+    font-size: 0.75rem; padding: 2px 8px; border: 1px solid #333; border-radius: 3px; 
+    color: #333; background-color: #fff; text-decoration: none; margin-right: 5px; 
+    display: inline-block; 
+  }
+  .btn-code:hover { background-color: #333; color: #fff; text-decoration: none; }
+
+  /* PDF 按钮：红边白底 */
+  .btn-pdf-soon { 
+    font-size: 0.75rem; padding: 2px 8px; border: 1px solid #d32f2f; border-radius: 3px; 
+    color: #d32f2f; background-color: #fff; text-decoration: none; margin-right: 5px; 
+    display: inline-block; cursor: not-allowed; opacity: 0.8; 
+  }
+
+  /* Patent 按钮：蓝边白底 (Matches Smart Wagon) */
   .btn-patent {
-    font-size: 0.7rem !important; 
-    padding: 4px 8px !important; 
-    margin-bottom: 5px;
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    text-align: left;
-    border: 1px solid #007bff !important; 
-    color: #007bff !important;
-    background-color: white;
-    border-radius: 0.2rem;
-    display: inline-block;
+    font-size: 0.7rem !important; padding: 4px 8px !important; margin-bottom: 5px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left;
+    border: 1px solid #007bff !important; color: #007bff !important;
+    background-color: white; border-radius: 0.2rem; display: inline-block;
   }
-  .btn-patent:hover { 
-    background-color: #007bff !important; 
-    color: white !important; 
-    text-decoration: none;
-  }
-  /* Grid version specifically for Smart Wagon list */
-  .btn-patent-block {
-    width: 100%;
-  }
+  .btn-patent:hover { background-color: #007bff !important; color: white !important; text-decoration: none; }
+  
+  .btn-patent-block { width: 100%; }
 
   /* 3. Typography */
   h5 { font-weight: 700; font-size: 1.1rem; color: #333; margin-bottom: 8px; margin-top: 0; }
   p.desc-text { font-size: 0.9rem; line-height: 1.5; color: #444; text-align: justify; margin-bottom: 10px; }
   
-  /* Description Header Style */
   header.post-header { margin-bottom: 40px !important; }
   p.post-description { font-size: 1.1rem; color: #828282; margin-top: -10px; margin-bottom: 30px; font-weight: 300; }
 </style>
@@ -85,7 +86,7 @@ description: A collection of projects during my work and study.
   <!-- At UM -->
   <h3 class="mt-4 mb-4">At UM</h3>
   {% for item in site.data.works %}
-    {% if item.id == 'linkerbot' or item.id == 'leaderdrive' %}
+    {% if item.id == 'linkerbot' or item.id == 'leaderdrive' or item.id == 'vlgp' %}
       <div class="row mb-5">
         <div class="col-sm-5">
           <div class="static-contain-box" style="height: 180px;">
@@ -95,9 +96,14 @@ description: A collection of projects during my work and study.
         <div class="col-sm-7">
           <h5>{{ item.title }}</h5>
           <p class="desc-text">{{ item.desc }}</p>
-          {% if item.code %}
-          <a href="{{ item.code }}" class="btn btn-outline-dark btn-sm">Code</a>
-          {% endif %}
+          <div class="work-links">
+            {% if item.code %}
+              <a href="{{ item.code }}" class="btn-code">Code</a>
+            {% endif %}
+            {% if item.type == 'publication' %}
+              <span class="btn-pdf-soon">PDF (Coming Soon)</span>
+            {% endif %}
+          </div>
         </div>
       </div>
     {% endif %}
@@ -105,7 +111,7 @@ description: A collection of projects during my work and study.
 
   <hr>
 
-  <!-- At Dreame (Layout Fixed to 5:7) -->
+  <!-- At Dreame -->
   <h3 class="mt-4 mb-4">At Dreame Technology</h3>
   <div class="row mb-5">
     <div class="col-sm-5">
@@ -136,7 +142,7 @@ description: A collection of projects during my work and study.
 
   <hr>
 
-  <!-- At Laifen (Button Style Fixed) -->
+  <!-- At Laifen -->
   <h3 class="mt-4 mb-4">At Laifen Technology</h3>
   <div class="row mb-5">
     <div class="col-sm-5">
@@ -149,7 +155,6 @@ description: A collection of projects during my work and study.
       <p class="desc-text">
         Engineered a gravity-compensation mechanism using scotch yoke and cam profiles to linearize spring output. This innovation allows users to adjust heavy device height with zero effort (hovering effect).
       </p>
-      <!-- Short Button, Blue Style -->
       <div style="margin-top: 10px;">
         <a href="{{ 'assets/pdf/CN202420998035_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn-patent">
           <i class="fas fa-file-pdf"></i> CN 202420998035 U
@@ -160,7 +165,7 @@ description: A collection of projects during my work and study.
 
   <hr>
 
-  <!-- At EcoFlow (Layout Fixed to 5:7) -->
+  <!-- At EcoFlow -->
   <h3 class="mt-4 mb-4">At EcoFlow</h3>
   
   <!-- Project 1: Blade Mower -->
@@ -202,8 +207,7 @@ description: A collection of projects during my work and study.
         Spearheaded the development of a smart electric-assist camping wagon aimed at redefining outdoor heavy-payload transport. Engineered a compact folding kinematic architecture and implemented dynamic current-loop control for gravity compensation. This system provides users with seamless, effortless propulsion and critical anti-slip safety on slopes, significantly enhancing the overall user experience.
       </p>
       
-      <!-- Patent Grid -->
-      <div class="row mt-2">
+      <div class="row mt-3">
         <div class="col-md-6 col-12"><a href="{{ 'assets/pdf/CN202320491229_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn-patent btn-patent-block"><i class="fas fa-file-pdf"></i> CN 202320491229 U</a></div>
         <div class="col-md-6 col-12"><a href="{{ 'assets/pdf/CN202320498391_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn-patent btn-patent-block"><i class="fas fa-file-pdf"></i> CN 202320498391 U</a></div>
         <div class="col-md-6 col-12"><a href="{{ 'assets/pdf/CN202320571565_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn-patent btn-patent-block"><i class="fas fa-file-pdf"></i> CN 202320571565 U</a></div>
