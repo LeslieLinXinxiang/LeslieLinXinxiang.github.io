@@ -101,7 +101,7 @@ social: false
           <div class="work-title">Mechatronic Design and Locomotion Deployment for Bipedal Humanoid</div>
           <div class="work-venue">Industry Collaboration with Leaderdrive</div>
           <div class="work-desc">
-            Directed the structural design and integration of joint modules for a humanoid platform. Optimized locomotion stability by mitigating mechanical resonance and sensor noise during hardware-in-the-loop (HIL) testing and deployment.
+            Collaborated on the mechatronic development of a bipedal humanoid platform. Executed the mechanical design of joint modules integrated with high-torque harmonic reducers and assisted in the real-machine deployment of locomotion algorithms. Optimized system stability by identifying and mitigating mechanical resonance issues during 1kHz EtherCAT-based Hardware-in-the-Loop (HIL) testing.
           </div>
         </div>
       </div>
