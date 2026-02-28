@@ -22,9 +22,7 @@
   title: "Mechatronic Design and Locomotion Deployment for Bipedal Humanoid"
   venue: "Industry Collaboration with Leaderdrive"
   img: "assets/img/collaboration_project.jpg"
-  desc: "Led the mechatronic integration of humanoid joint modules utilizing high-torque harmonic reducers. Built a 1kHz EtherCAT control feedback link for HIL testing and mitigated mechanical resonance to resolve control gain divergence in locomotion algorithms."
-
-- id: laifen
+  desc: "Collaborated on the mechatronic development of a bipedal humanoid platform. Executed the mechanical design of joint modules integrated with high-torque harmonic reducers and assisted in the real-machine deployment of locomotion algorithms. Optimized system stability by identifying and mitigating mechanical resonance issues during 1kHz EtherCAT-based Hardware-in-the-Loop (HIL) testing.“
   type: project
   title: "Constant Force Lifting Mechanism for Consumer Robotics"
   venue: "Laifen Tech | Lead Inventor"
