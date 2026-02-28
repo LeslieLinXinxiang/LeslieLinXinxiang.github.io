@@ -112,7 +112,7 @@ social: false
           <img src="{{ 'assets/img/MOVA_Mower-1000Thumb_1.jpg' | relative_url }}" alt="MOVA M1">
         </div>
         <div class="work-content">
-          <div class="work-title">MOVA Robotic Lawn Mower System</div>
+          <div class="work-title">MOVA Robotic Lawn Mower</div>
           <div class="work-venue">Dreame Technology | Mobile Robotics Platform</div>
           <div class="work-desc">
             Led the precision design and dynamic balancing of the blade actuation module. Resolved IPX-rated waterproofing and vibration compensation for harsh outdoor environments, supporting a global shipment target of 200,000+ units.
