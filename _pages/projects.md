@@ -185,7 +185,7 @@ description: A collection of projects during my work and study.
     <div class="col-sm-7">
       <h5>Blade Robotic Lawn Mower</h5>
       <p class="desc-text">
-        <b>CES Innovation Award Winner.</b> Led the structural development of the mowing deck and leaf collection module. Optimized the gear transmission system, extending service life by 40% and ensuring IPX5 waterproofing.
+        <b>CES Innovation Award Winner.</b> Led the development of the mowing deck and leaf collection module. Optimized the gear transmission system of mowing motor, extending service life by 40% and ensuring IPX5 waterproofing.
       </p>
     </div>
   </div>
