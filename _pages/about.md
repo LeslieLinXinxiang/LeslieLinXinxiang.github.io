@@ -32,42 +32,35 @@ social: false
       </p>
     </div>
 
-    <!-- 2. Selected Works Section (Manual Layout for Precision) -->
+<!-- 2. Selected Works Section -->
     <div class="selected-works" style="margin-top: 50px;">
       <h2 style="font-size: 1.5rem; border-bottom: 1.5px solid #333; padding-bottom: 8px; margin-bottom: 25px;">Selected Works</h2>
       
       <style>
-        .work-item { display: flex; align-items: flex-start; margin-bottom: 35px; gap: 20px; }
-        .work-img { flex: 0 0 220px; max-width: 220px; }
-        .work-img img { width: 100%; height: 130px; object-fit: cover; border-radius: 4px; border: 1px solid #f0f0f0; }
-        .work-content { flex: 1; }
+        /* 这里的 CSS 用于统一样式，布局交给下方的 Bootstrap 类 */
+        .work-img-box {
+          height: 180px; width: 100%; display: flex; align-items: center; justify-content: center;
+          background-color: #fcfcfc; border: 1px solid #f0f0f0; border-radius: 4px; overflow: hidden;
+        }
+        .work-img-box img { max-height: 100%; max-width: 100%; object-fit: contain; }
         .work-title { font-size: 1.05rem; font-weight: 600; margin: 0 0 5px 0; color: #333; }
         .work-venue { font-size: 0.85rem; color: #777; margin-bottom: 8px; font-style: italic; }
         .work-desc { font-size: 0.88rem; line-height: 1.45; color: #444; text-align: justify; }
         .work-links { margin-top: 8px; }
-        /* 1. Code 按钮：黑边白底 */
-        .work-links .btn-code { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #333; border-radius: 3px; color: #333; background-color: #fff; text-decoration: none; margin-right: 5px; display: inline-block; }
-        .work-links .btn-code:hover { background-color: #333; color: #fff; text-decoration: none; }
-        
-        /* 2. PDF 按钮：红边白底 */
-        .work-links .btn-pdf-soon { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #d32f2f; border-radius: 3px; color: #d32f2f; background-color: #fff; text-decoration: none; margin-right: 5px; display: inline-block; cursor: not-allowed; opacity: 0.8; }
-        
-        /* 3. Patent 按钮：蓝边白底 (与 Projects 页面统一) */
-        .work-links .btn-patent { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #007bff; border-radius: 3px; color: #007bff; text-decoration: none; margin-right: 5px; display: inline-block; background-color: #fff;}
-        .work-links .btn-patent:hover { background-color: #007bff; color: #fff; text-decoration: none; }
+        .btn-code { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #333; border-radius: 3px; color: #333 !important; background-color: #fff; text-decoration: none; margin-right: 5px; display: inline-block; }
+        .btn-pdf-soon { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #d32f2f; border-radius: 3px; color: #d32f2f; background-color: #fff; opacity: 0.8; }
+        .btn-patent { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #007bff; border-radius: 3px; color: #007bff !important; text-decoration: none; display: inline-block; }
       </style>
 
       <!-- 1. V-LGP -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/vlgp.gif' | relative_url }}" alt="V-LGP">
+      <div class="row mb-5">
+        <div class="col-sm-5 col-md-4">
+          <div class="work-img-box"><img src="{{ 'assets/img/vlgp.gif' | relative_url }}" alt="V-LGP"></div>
         </div>
-        <div class="work-content">
+        <div class="col-sm-7 col-md-8">
           <div class="work-title">V-LGP: Vision-Language Geometric Programming for Long-Horizon Assembly</div>
           <div class="work-venue">Submitted to IEEE Robotics and Automation Letters (RA-L)</div>
-          <div class="work-desc">
-            A hierarchical framework bridging VLM reasoning with low-level LGP solvers. Enhanced the C++ KOMO solver with virtual anchors for multi-support consistency.
-          </div>
+          <div class="work-desc">A hierarchical framework bridging VLM reasoning with low-level LGP solvers. Enhanced the C++ KOMO solver with virtual anchors for multi-support consistency.</div>
           <div class="work-links">
             <a href="https://github.com/LeslieLinXinxiang/VLM-LGP" class="btn-code">Code</a>
             <span class="btn-pdf-soon">PDF (Coming Soon)</span>
@@ -76,80 +69,66 @@ social: false
       </div>
 
       <!-- 2. Linkerbot -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/vlm_agent.gif' | relative_url }}" alt="VLM Agent">
+      <div class="row mb-5">
+        <div class="col-sm-5 col-md-4">
+          <div class="work-img-box"><img src="{{ 'assets/img/vlm_agent.gif' | relative_url }}" alt="VLM Agent"></div>
         </div>
-        <div class="work-content">
+        <div class="col-sm-7 col-md-8">
           <div class="work-title">End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation</div>
           <div class="work-venue">Collaboration with Linkerbot | Joint Lab Project</div>
-          <div class="work-desc">
-            Developed a vision-centric closed-loop agent for autonomous long-horizon manipulation on a JAKA Zu3 platform. Key implementations include zero-shot multi-modal spatial grounding, adaptive 3-finger/5-finger grasping for the Linkerhand O6, and a CV-based error recovery mechanism to ensure robust execution in unstructured environments.
-          </div>
-          <div class="work-links">
-            <a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent" class="btn-code">Code</a>
-          </div>
+          <div class="work-desc">Developed a vision-centric closed-loop agent for autonomous long-horizon manipulation. Implemented zero-shot multi-modal spatial grounding and adaptive grasping for Linkerhand O6.</div>
+          <div class="work-links"><a href="https://github.com/LeslieLinXinxiang/VLM-Game-Agent" class="btn-code">Code</a></div>
         </div>
       </div>
 
-      <!-- 3. Leaderdrive Humanoid -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/collaboration_project.jpg' | relative_url }}" alt="Humanoid">
+      <!-- 3. Leaderdrive -->
+      <div class="row mb-5">
+        <div class="col-sm-5 col-md-4">
+          <div class="work-img-box"><img src="{{ 'assets/img/collaboration_project.jpg' | relative_url }}" alt="Humanoid"></div>
         </div>
-        <div class="work-content">
+        <div class="col-sm-7 col-md-8">
           <div class="work-title">Mechatronic Design and Locomotion Deployment for Bipedal Humanoid</div>
           <div class="work-venue">Industry Collaboration with Leaderdrive</div>
-          <div class="work-desc">
-            Collaborated on the mechatronic development of a bipedal humanoid platform. Executed the mechanical design of joint modules integrated with high-torque harmonic reducers and assisted in the real-machine deployment of locomotion algorithms. Optimized system stability by identifying and mitigating mechanical resonance issues during 1kHz EtherCAT-based Hardware-in-the-Loop (HIL) testing.
-          </div>
+          <div class="work-desc">Collaborated on mechatronic development of a bipedal platform. Executed joint module design and assisted in real-machine deployment of locomotion algorithms.</div>
         </div>
       </div>
 
-      <!-- 4. Dreame MOVA M1 -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/MOVA_Mower-1000Thumb_1.jpg' | relative_url }}" alt="MOVA M1">
+      <!-- 4. MOVA M1 -->
+      <div class="row mb-5">
+        <div class="col-sm-5 col-md-4">
+          <div class="work-img-box"><img src="{{ 'assets/img/MOVA_Mower-1000Thumb_1.jpg' | relative_url }}" alt="MOVA M1"></div>
         </div>
-        <div class="work-content">
+        <div class="col-sm-7 col-md-8">
           <div class="work-title">MOVA Robotic Lawn Mower</div>
           <div class="work-venue">Dreame Technology | Mobile Robotics Platform</div>
-          <div class="work-desc">
-            Led the precision design and dynamic balancing of the blade actuation module. Resolved IPX-rated waterproofing and vibration compensation for harsh outdoor environments, supporting a global shipment target of 200,000+ units.
-          </div>
+          <div class="work-desc">Led precision design and dynamic balancing of the blade module. Resolved IPX waterproofing and vibration compensation for global mass production.</div>
         </div>
       </div>
 
-      <!-- 5. Laifen Constant Force -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/constant_force.jpg' | relative_url }}" alt="Constant Force">
+      <!-- 5. Laifen -->
+      <div class="row mb-5">
+        <div class="col-sm-5 col-md-4">
+          <div class="work-img-box"><img src="{{ 'assets/img/constant_force.jpg' | relative_url }}" alt="Constant Force"></div>
         </div>
-        <div class="work-content">
+        <div class="col-sm-7 col-md-8">
           <div class="work-title">Constant Force Lifting Mechanism</div>
           <div class="work-venue">Laifen Technology | Lead Inventor</div>
-          <div class="work-desc">
-            Engineered a gravity-compensation mechanism using scotch yoke and cam profiles to linearize spring output. This innovation allows users to adjust heavy device height with zero effort (hovering effect).
-          </div>
+          <div class="work-desc">Engineered a gravity-compensation mechanism using scotch yoke and cam profiles to linearize spring output, achieving zero-effort height adjustment.</div>
           <div class="work-links">
-            <a href="{{ 'assets/pdf/CN202420998035_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn-patent">
-              <i class="fas fa-file-pdf"></i> CN 202420998035 U
-            </a>
+            <a href="{{ 'assets/pdf/CN202420998035_FullTextImage.pdf' | relative_url }}" target="_blank" class="btn-patent">CN 202420998035 U</a>
           </div>
         </div>
       </div>
 
-      <!-- 6. EcoFlow Blade Mower -->
-      <div class="work-item">
-        <div class="work-img">
-          <img src="{{ 'assets/img/blade with puppy.JPG' | relative_url }}" alt="Blade Mower">
+      <!-- 6. EcoFlow -->
+      <div class="row mb-5">
+        <div class="col-sm-5 col-md-4">
+          <div class="work-img-box"><img src="{{ 'assets/img/blade with puppy.JPG' | relative_url }}" alt="Blade Mower"></div>
         </div>
-        <div class="work-content">
+        <div class="col-sm-7 col-md-8">
           <div class="work-title">Blade Robotic Lawn Mower System</div>
           <div class="work-venue">EcoFlow | CES Innovation Award Winner</div>
-          <div class="work-desc">
-            Led the structural development of the mowing deck and leaf collection module. Optimized the gear transmission system, extending service life by 40% and ensuring IPX5 waterproofing.
-          </div>
+          <div class="work-desc">Led the structural development of mowing deck and leaf collection. Optimized gear transmission, extending service life by 40%.</div>
         </div>
       </div>
 
