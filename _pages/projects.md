@@ -200,7 +200,7 @@ description: A collection of projects during my work and study.
     <div class="col-sm-7">
       <h5>Smart Electric Camping Wagon</h5>
       <p class="desc-text">
-        Implemented current-loop control for gravity compensation (anti-slip on slopes) and designed the folding kinematic structure. Authored 5 utility patents for novel actuation structures.
+        Spearheaded the development of a smart electric-assist camping wagon aimed at redefining outdoor heavy-payload transport. Engineered a compact folding kinematic architecture and implemented dynamic current-loop control for gravity compensation. This system provides users with seamless, effortless propulsion and critical anti-slip safety on slopes, significantly enhancing the overall user experience.
       </p>
       
       <!-- Patent Grid -->
