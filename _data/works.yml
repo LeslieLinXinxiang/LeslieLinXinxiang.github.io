@@ -22,8 +22,9 @@
   title: "Mechatronic Design and Locomotion Deployment for Bipedal Humanoid"
   venue: "Industry Collaboration with Leaderdrive"
   img: "assets/img/collaboration_project.jpg"
-  desc: "Collaborated on the mechatronic development of a bipedal humanoid platform. Executed the mechanical design of joint modules integrated with high-torque harmonic reducers and assisted in the real-machine deployment of locomotion algorithms. Optimized system stability by identifying and mitigating mechanical resonance issues during 1kHz EtherCAT-based Hardware-in-the-Loop (HIL) testing.“
-  
+  desc: "Collaborated on the mechatronic development of a bipedal humanoid platform. Executed the mechanical design of joint modules integrated with high-torque harmonic reducers and assisted in the real-machine deployment of locomotion algorithms. Optimized system stability by identifying and mitigating mechanical resonance issues during 1kHz EtherCAT-based Hardware-in-the-Loop (HIL) testing."
+  code: ""
+
 - id: laifen
   type: project
   title: "Constant Force Lifting Mechanism for Consumer Robotics"
@@ -34,7 +35,7 @@
 
 - id: ecoflow
   type: project
-  title: "Blade Robotic Lawn Mower"
+  title: "Blade Robotic Lawn Mower System"
   venue: "EcoFlow | CES Innovation Award"
   img: "assets/img/blade with puppy.JPG"
   desc: "Led the structural development of the cutter head lifting and leaf collection modules. Optimized the gearbox turbine worm material and transmission system, extending the reducer's service life by 40% for the CES Innovation Award-winning product."
