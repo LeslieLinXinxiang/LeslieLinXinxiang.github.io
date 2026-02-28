@@ -20,14 +20,14 @@ description: A collection of projects during my work and study.
 
   /* Carousel Box: 320px height locked */
   .carousel-contain-box {
-    height: 320px; width: 100%; display: flex; align-items: center; justify-content: center;
+    height: 180px; width: 100%; display: flex; align-items: center; justify-content: center;
     background-color: #f8f9fa; border: 1px solid #eee; border-radius: 5px;
   }
   .carousel-contain-box img { max-height: 100%; max-width: 100%; object-fit: contain; }
   
   /* Static Box: 250px height locked */
   .static-contain-box {
-    height: 250px; width: 100%; display: flex; align-items: center; justify-content: center;
+    height: 180px; width: 100%; display: flex; align-items: center; justify-content: center;
     background-color: #fff; border: 1px solid #eee; border-radius: 5px;
   }
   .static-contain-box img { max-height: 100%; max-width: 100%; object-fit: contain; }
