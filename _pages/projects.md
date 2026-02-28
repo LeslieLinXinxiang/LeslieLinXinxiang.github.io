@@ -86,7 +86,7 @@ description: A collection of projects during my work and study.
   <!-- At UM -->
   <h3 class="mt-4 mb-4">At UM</h3>
   {% for item in site.data.works %}
-    {% if item.id == 'linkerbot' or item.id == 'leaderdrive' or item.id == 'vlgp' %}
+    {% if item.id == 'linkerbot' or item.id == 'leaderdrive' %}
       <div class="row mb-5">
         <div class="col-sm-5">
           <div class="static-contain-box" style="height: 180px;">
