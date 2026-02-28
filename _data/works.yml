@@ -14,12 +14,7 @@
   title: "End-to-End Reasoning for Long-Horizon Autonomous Robotic Manipulation"
   venue: "Collaboration with Linkerbot | Joint Lab Project"
   img: "assets/img/vlm_agent.gif"
-  desc: >
-    System Architecture: Developed a vision-centric closed-loop agent to autonomously execute multi-step manipulation tasks in unstructured environments.
-    Adaptive Grasping Strategy: Engineered geometric-based grasp primitives for the Linkerhand O6 Dexterous Hand. Implemented dynamic 3-finger/5-finger mode switching and approach pose optimization, significantly enhancing grasp stability.
-    Spatial Grounding: Achieved zero-shot multi-modal spatial grounding, enabling the VLM to directly map high-level semantic logic into physical space coordinates.
-    Mechatronic Integration: Led full-stack integration and Eye-to-Hand calibration on a RealSense D435 and 6-DOF JAKA Zu3 platform, utilizing MoveIt for robust trajectory planning.
-    Error Recovery: Designed a CV-based state verification mechanism with autonomous fault detection, triggering secondary replanning upon grasp failures to ensure task completion.
+  desc: "Developed a vision-centric closed-loop agent for autonomous long-horizon manipulation on a JAKA Zu3 platform. Key implementations include zero-shot multi-modal spatial grounding, adaptive 3-finger/5-finger grasping for the Linkerhand O6, and a CV-based error recovery mechanism to ensure robust execution in unstructured environments."
   code: "https://github.com/LeslieLinXinxiang/VLM-Game-Agent"
 
 - id: leaderdrive
