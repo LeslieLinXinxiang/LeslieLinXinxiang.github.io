@@ -100,7 +100,7 @@ social: false
         </div>
         <div class="col-sm-7 col-md-8">
           <div class="work-title">MOVA Robotic Lawn Mower</div>
-          <div class="work-venue">Dreame Technology | Mobile Robotics Platform</div>
+          <div class="work-venue">Dreame Technology | Mobile Robotics</div>
           <div class="work-desc">Led precision design and dynamic balancing of the blade module. Resolved IPX waterproofing and vibration compensation for global mass production.</div>
         </div>
       </div>
