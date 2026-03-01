@@ -120,17 +120,7 @@ social: false
         </div>
       </div>
 
-      <!-- 6. EcoFlow -->
-      <div class="row mb-5">
-        <div class="col-sm-5 col-md-4">
-          <div class="work-img-box"><img src="{{ 'assets/img/blade with puppy.JPG' | relative_url }}" alt="Blade Mower"></div>
-        </div>
-        <div class="col-sm-7 col-md-8">
-          <div class="work-title">Blade Robotic Lawn Mower System</div>
-          <div class="work-venue">EcoFlow | CES Innovation Award Winner</div>
-          <div class="work-desc">Led the structural development of mowing deck and leaf collection. Optimized gear transmission, extending service life by 40%.</div>
-        </div>
-      </div>
+
 
     </div>
   </article>
